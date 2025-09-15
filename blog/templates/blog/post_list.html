@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Blog dla programistów</title>
 </head>
-<body>
-<div>
-<h1>Witam na stronie bloga!</h1>
-<h2>Blog o programowaniu</h2>
-<h3>Autor: Ja</h3>
-<h4>Wszelkie prawa zastrzeżone</h4>
-</div>
-<div>
-<p>To jest akapit</p>
-<em>To jest wyróżniony tekst</em><br>
-<strong>Pogrubiony tekst</strong><br>
-<a href="https://strefakursow.pl">kliknij tutaj</a>
-</div> 
-<div>
-<ul>
-    <li>Element listy</li>
-    <li>Element listy</li>
-    <li>Element listy</li>
-</ul>
-</div>
 
+<body>
+    <div>
+        <h1>Witam na stronie bloga!</h1>
+        <h2>Blog o programowaniu</h2>
+        <h3>Autor: Ja</h3>
+        <h4>Wszelkie prawa zastrzeżone</h4>
+    </div>
+    {% for post in posts %}
+    <div>
+        <p>opublikowany: {{ post.publish_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <em>{{ post.text|linebreaksbr }} </em>
+    </div>
+    {% endfor %}
 </body>
 
 </html>
