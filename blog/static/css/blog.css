@@ -1,0 +1,30 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,420&display=swap");
+
+.roboto-mono-123 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 420;
+  font-style: italic;
+  color:white;
+  background-color: #750f14;
+}
+
+h1 a,h2 a{
+    color: #750f14;
+}
+
+body {
+    padding-left: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.page-header{
+    background-color: #750f14;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.data{
+    color:gray;
+}
