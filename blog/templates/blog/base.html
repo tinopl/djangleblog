@@ -1,18 +1,19 @@
 {% load static %}
 <html lang="pl">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Blog dla programistów</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-</head>
-
+        <head>
+            <meta charset="UTF-8">
+            <title>Blog dla programistów</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        </head>
 <body>
-<div class="roboto-mono-123">
-<h1>Blog dla programistów</h1>
+<div class="page-header">
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <h1 class="page-header"><a href="/">Blog dla programistów</a></h1>
 </div>
-<div class="content-container">
+<div class="content container">
     <div class="row">
         <div class="col-md-8">
             {% block content %}
